@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>folow the cursor</title>
+    <link rel="stylesheet" href="followcursor.css">
+</head>
+<body>
+    <div class="pointer"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).mousemove(pointmouse)
+        function pointmouse(event){
+            $('.pointer').css({left:event.pageX, top:event.pageY})
+        }
+    </script>
+</body>
+</html>
